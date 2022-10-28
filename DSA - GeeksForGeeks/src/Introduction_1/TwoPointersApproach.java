@@ -2,7 +2,7 @@ package Introduction_1;
 
 import java.util.Scanner;
 
-//Question - To find if there is a pair with sum equals to X.
+//Question - To find if there is a pair with sum equals to X in a sorted array.
 
 public class TwoPointersApproach {
 	
