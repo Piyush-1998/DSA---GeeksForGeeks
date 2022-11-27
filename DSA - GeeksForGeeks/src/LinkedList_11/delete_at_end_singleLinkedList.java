@@ -1,6 +1,6 @@
 package LinkedList_11;
 
-public class delete_at_end {
+public class delete_at_end_singleLinkedList {
 	
 	static class Node {
 		int data;
