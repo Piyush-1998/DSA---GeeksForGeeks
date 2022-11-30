@@ -2,7 +2,7 @@ package LinkedList_11;
 
 
 
-public class insert_at_end {
+public class insert_at_end_singleLinkedList {
 	
 //	static class for Node
 	
