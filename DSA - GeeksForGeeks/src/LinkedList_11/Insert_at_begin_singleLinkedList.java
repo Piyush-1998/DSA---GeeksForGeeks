@@ -2,7 +2,7 @@ package LinkedList_11;
 
 
 
-public class Insert_at_begin {
+public class Insert_at_begin_singleLinkedList {
 	
 	static class Node {
 	int data;
