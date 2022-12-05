@@ -1,6 +1,6 @@
 package LinkedList_11;
 
-public class Iterative_traversal {
+public class Iterative_traversal_singleLinkedList {
 	static class Node {
 		int data;
 		Node next;
