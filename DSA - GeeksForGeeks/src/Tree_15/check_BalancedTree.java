@@ -32,7 +32,7 @@ public class check_BalancedTree {
     	root.right=new Node(30);
     	root.right.left=new Node(15);
     	root.right.right=new Node(20);
-//    	root.right.right.left=new Node(20);
+    	root.right.right.left=new Node(20);
     	if(isBalanced(root)>0) {
     		System.out.print("Balanced Tree");
     	}
