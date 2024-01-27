@@ -14,16 +14,16 @@ public class Simple_circularLinkedList {
 		
 	static void printlist(Node head) {
 		if(head==null) return;
-		Node t = head;
+//		Node t = head;
 		System.out.print(head.data+" ");
 		for(Node n = head.next; n!=head; n = n.next ) {
 			System.out.print(n.data+" ");
 		}
 		System.out.println();
-		do {
-			System.out.print(t.data+" ");
-			t = t.next;
-		} while(t!=head);
+//		do {
+//			System.out.print(t.data+" ");
+//			t = t.next;
+//		} while(t!=head);
 	}
 	
 	public static void main(String[] args) {
