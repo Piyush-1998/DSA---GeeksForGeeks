@@ -16,10 +16,10 @@ public class childrenSum_Parent {
 		}
 	}
 	
-	static int childrenSum(Node root) {
-		if(root==null) return 1;
+	static boolean childrenSum(Node root) {
+		if(root==null) return true;
 		if(root.left==null && root.right==null) {
-			return 1;
+			return true;
 		}
 		int sum = 0;
 		if(root.left!=null) {
@@ -28,8 +28,8 @@ public class childrenSum_Parent {
 		if(root.right!=null) {
 			sum = sum+root.right.data;
 		}
-		if(root.data==sum && childrenSum(root.left)==1 && childrenSum(root.right)==1) return 1;
-		else return 0;
+		return (root.data==sum && childrenSum(root.left) && childrenSum(root.right));
+		 
 	}
 
 	public static void main(String[] args) {
