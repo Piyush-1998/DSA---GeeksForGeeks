@@ -24,7 +24,6 @@ public class Palindrome_LinkedList {
 		for(Node curr = head; curr!=null; curr = curr.next) {
 			if(stack.pop()!=curr.data) return false;
 		}
-		
 		return true;
 	}
 
@@ -38,9 +37,9 @@ public class Palindrome_LinkedList {
 			slow = slow.next;
 			fast = fast.next.next;
 		}
-		//Below func is to revser from middle node to last node
+		//Below func is to reverse from middle node to last node
 		Node rev = reverse(slow.next);
-		//Below code is to comapre front and last node for palindrome
+		//Below code is to compare front and last node for palindrome
 		Node curr = head;
 		while(rev!=null) {
 			if(rev.data!=curr.data) {
