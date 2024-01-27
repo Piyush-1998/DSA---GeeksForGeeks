@@ -29,13 +29,13 @@ public class diameter_BinaryTree {
 	}
 	
 	//Efficient Solution O(n)
-	static int max = 0;
+//	static int max = 0;
 	static int height1(Node root) {
 		
 		if(root==null) return 0;
 		int lh = height1(root.left);
 		int rh = height1(root.right);
-		max = Math.max(max, 1+lh+rh);
+//		max = Math.max(max, 1+lh+rh);
 		return 1+Math.max(lh, rh);
 		}
 
@@ -48,8 +48,8 @@ public class diameter_BinaryTree {
     	root.right.right=new Node(60);
 	    root.right.left.left=new Node(50);
 	    root.right.right.right=new Node(70);
-	    System.out.println(diameter(root));
-	    System.out.print(height1(root));
+	    System.out.println("diameter -"+ diameter(root));
+	    System.out.print("height1 -"+height1(root));
 	}
 
 }
